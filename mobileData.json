@@ -1,0 +1,13 @@
+{
+   
+    "mobiles":[
+        {"modelName":"Iphone6", "manfacturer":"Apple","storage":"16GB","camera":"8Mpx","price":"43899" , "os":"iOS","image":"iphone6.jpg","bigimg":"iphone6l.png","details":"brilliant phone by Apple"},
+        { "modelName":"HTC One M8", "manfacturer":"HTC","storage":"32GB","camera":"5Mpx","price":"67899","os":"Android","image":"htcOneM8.jpg","bigimg":"iphone6large.jpg","details":"brilliant phone by Htc"},
+        { "modelName":"Sony Xperia Z3", "manfacturer":"Sony","storage":"16GB","camera":"15Mpx","price":"65899","os":"Android","image":"xperiaz3.png","bigimg":"iphone6large.jpg","details":"brilliant phone by Sony"},
+		{ "modelName":"Galaxy Alpha", "manfacturer":"Samsung","storage":"32GB","camera":"12Mpx","price":"34899","os":"Android","image":"SamsungAlpha.jpg","bigimg":"iphone6large.jpg","details":"brilliant phone by Samsung"}, 
+        { "modelName":"Nokia Lumia", "manfacturer":"Nokia","storage":"16GB","camera":"5Mpx","price":"34450.99","os":"Windows","image":"NokiaLumia.jpg","bigimg":"iphone6large.jpg","details":"brilliant phone by nokia"},
+        { "modelName":"Zte Nubia", "manfacturer":"ZTE","storage":"32GB","camera":"12Mpx","price":"22399","os":"Android","image":"ZteNubia.jpeg","bigimg":"iphone6large.jpg","details":"brilliant phone by ZTE"},
+		{ "modelName":"Samsung Galaxy S5", "manfacturer":"Samsung","storage":"16GB","camera":"15Mpx","price":"35399","os":"Android","image":"SamsungS5.jpg","bigimg":"iphone6large.jpg","details":"brilliant phone by samsung"},
+        { "modelName":"Iphone 5S", "manfacturer":"Apple","storage":"16GB","camera":"8Mpx","price":"30399","os":"iOS","image":"Iphone5s.jpg","bigimg":"iphone6large.jpg","details":"brilliant phone by apple"}
+    ]
+}

@@ -1,0 +1,219 @@
+
+<html>
+<head>
+
+<meta charset="UTF-8">
+ <meta name="description" content="Mobile selling site">
+ <meta name="keywords" content="HTML,CSS,JavaScript">
+ <meta name="author" content="Lakshay Setia">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<title>MOBILE WEBSITE</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<section>
+<article>
+  <header>
+    
+    <h3>Developed By:Lakshay Setia</h3>
+    
+  </header>
+  
+
+</article>
+
+</section>
+<section>
+<div id="left">
+<form id="filter">
+<b>Manfacturer</b><br>
+<input type="checkbox" id="apple" value="Apple" class="brandman" onclick="applyFilter(event)"></select>Apple
+<br>
+<input type="checkbox" id="samsung" value="Samsung" class="brandman" onclick="applyFilter(event)"></"></select>Samsung
+<br>
+<input type="checkbox" id="htc" value="HTC" onclick="applyFilter(event)" class="brandman"></select>HTC
+<br>
+<input type="checkbox" id="nokia" value="Nokia" onclick="applyFilter(event)" class="brandman"></select>Nokia
+<br>
+<input type="checkbox" id="sony" value="Sony" onclick="applyFilter(event)" class="brandman"></select>Sony<br><br>
+<b>Internal Storage</b><br>
+<input type="checkbox" id="16gb" value="16GB" onclick="applyFilterSt(event)" class="storage"></select>16GB
+<br>
+<input type="checkbox" id="32gb" value="32GB" onclick="applyFilterSt(event)" class="storage"> </select>32GB<br><br>
+<b>OS</b><br>
+<input type="checkbox" id="android" value="Android" onclick="applyFilterSoft(event)" class="opsoftware"></select>Android
+<br>
+<input type="checkbox" id="iOS" value="iOS" onclick="applyFilterSoft(event)" class="opsoftware"></select>iOS
+<br>
+<input type="checkbox" id="windows" value="Windows" onclick="applyFilterSoft(event)" class="opsoftware"></select>Windows<br><br>
+<input type="submit" value="Clear filters" onclick="clearFunction()"></input>
+</form>
+</div>
+
+
+<div id="right">
+<div id="mob1" class="mobilePhones">
+<div id="mob1img">
+
+<img  class="mobpic"></img>
+
+</div>
+
+
+
+
+<b><h3 class="model"></h3></b>
+<b class="brand"></b><br>
+<b class="memory"></b><b class="software"></b><br>
+<b class="camera"></b><b><br>
+<h3 class="rate"></h3>
+
+
+
+</div>
+
+
+<div id="mob2" class="mobilePhones">
+<div id="mob2img">
+<img  class="mobpic"></img>
+</div>
+
+
+<b><h3 class="model"></h3></b>
+<b class="brand"></b><br>
+<b class="memory"></b><b class="software"></b><br>
+<b class="camera"></b><b><br>
+<h3 class="rate"></h3>
+
+
+
+</div>
+
+<div id="mob3" class="mobilePhones">
+<div id="mob3img">
+
+<img  class="mobpic"></img>
+</div>
+
+
+<b><h3 class="model"></h3></b>
+<b class="brand"></b><br>
+<b class="memory"></b><b class="software"></b><br>
+<b class="camera"></b><b><br>
+<h3 class="rate"></h3>
+
+
+
+</div>
+<div id="mob4" class="mobilePhones">
+<div id="mob4img">
+<img  class="mobpic"></img>
+</div>
+
+
+<b><h3 class="model"></h3></b>
+<b class="brand"></b><br>
+<b class="memory"></b><b class="software"></b><br>
+<b class="camera"></b><b><br>
+<h3 class="rate"></h3>
+
+
+
+</div>
+<div id="mob5" class="mobilePhones">
+<div id="mob5img">
+<img  class="mobpic"></img>
+</div>
+
+
+<b><h3 class="model"></h3></b>
+<b class="brand"></b><br>
+<b class="memory"></b><b class="software"></b><br>
+<b class="camera"></b><b><br>
+<h3 class="rate"></h3>
+
+
+
+</div>
+<div id="mob6" class="mobilePhones">
+<div id="mob6img">
+<img  class="mobpic"></img>
+</div>
+
+
+<b><h3 class="model"></h3></b>
+<b class="brand"></b><br>
+<b class="memory"></b><b class="software"></b><br>
+<b class="camera"></b><b><br>
+<h3 class="rate"></h3>
+
+
+
+</div>
+<div id="mob7" class="mobilePhones">
+<div id="mob7img">
+
+<img  class="mobpic"></img>
+</div>
+
+
+<b><h3 class="model"></h3></b>
+<b class="brand"></b><br>
+<b class="memory"></b><b class="software"></b><br>
+<b class="camera"></b><b><br>
+<h3 class="rate"></h3>
+
+
+
+</div>
+<div id="mob8" class="mobilePhones">
+<div id="mob8img">
+<img  class="mobpic"></img>
+</div>
+
+
+<b><h3 class="model"></h3></b>
+<b class="brand"></b><br>
+<b class="memory"></b><b class="software"></b><br>
+<b class="camera"></b><b><br>
+<h3 class="rate"></h3>
+
+
+
+</div>
+
+
+
+<span id="emer"></span>
+<span id="emer1"></span>
+<span id="emer2"></span>
+<span id="emer3"></span>
+<span id="emer4"></span>
+<span id="emer5"></span>
+
+<div id="myModal" class="modal">
+<div class="modal-content">
+<img id="big"></img>
+    <span class="close">&times;</span>
+	
+    <p id="desc">iphone</p>
+  </div>
+</div>
+
+
+
+<script src="mobile.js" type="text/javascript">
+</script>
+
+</section>
+<section>
+<footer>
+
+<p>COPYRIGHT PROTECTED.</P>
+<p>contact me at: <a href="lakshaysetia@gmail.com">lakshaysetia@gmail.com</a></p> 
+</footer>
+</section>
+</body>
+</html>

@@ -1,0 +1,285 @@
+                                        Global Variable
+								index.html		
+										
+<html>
+   <body>
+      
+      <script type="text/javascript">
+	  
+		var a1=10;
+        a2=11;
+        window.a3=5;
+
+		
+        function hello()
+		{
+		var a4=88;
+		a5=89;
+		document.write(a1+"<br/>");
+		document.write(a2+"<br/>");
+		document.write(a3+"<br/>");
+		document.write(a4+"<br/>");
+		document.write(a5+"<br/>");
+		}
+      </script>
+      <input type="button" onclick="hello()" value="Please Click">
+      <p>Set the variables to different values and different operators and then try...</p>
+   </body>
+</html>
+
+The variables a1,a2 and a3 are Global.
+variable a4,a5 is local to function Hello()
+
+Global variables in JavaScript are attached to the "global object", 
+which in browser environment is aliased to window object - 
+this is why you can refer a global variable either as variableName or window.variableName.
+
+                                      Output
+10
+11
+5
+88
+89
+
+
+                                  index.html
+
+
+<html>
+   <body>
+      
+      <script type="text/javascript">
+	  
+		var a1=10;
+        a1=11;
+        window.a1=5;
+
+		
+        function hello()
+		{
+		
+		document.write(a1+"<br/>");
+		
+		}
+      </script>
+      <input type="button" onclick="hello()" value="Please Click">
+      <p>Set the variables to different values and different operators and then try...</p>
+   </body>
+</html>									  
+
+                                     Output
+5
+
+
+
+
+-->we can also use  window["myVar"]  to refer to a variable 
+
+                                     index.html
+
+<html>
+   <body>
+      
+      <script type="text/javascript">
+	  
+		var a1=10;
+        a1=11;
+        window["a1"]=5;
+
+		
+        function hello()
+		{
+		
+		document.write(a1+"<br/>");
+		
+		}
+      </script>
+      <input type="button" onclick="hello()" value="Please Click">
+      <p>Set the variables to different values and different operators and then try...</p>
+   </body>
+</html>
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                              USE OF THIS KEYWORD
+															  
+															  index.html
+															  
+															  
+<html>
+   <head>
+      
+      <script type = "text/javascript">
+function demo()   //this function is not part of any method therefore has a global scope and this inside it refers to Global Object(Window object)
+{
+document.write("the name is"+this.name);
+
+
+
+}
+
+	  function setAge(age) //this function is a part of   'student' constructor therefore has a  scope limited to object 's' and this inside it refers to object 's'. 
+{
+this.age=age;
+}
+
+	function student(nam,rollno) //this is a constructor named student and therefore has a  scope limited to object 's' and this inside it refers to object 's'.
+{
+this.nam=nam;
+this.rollno=rollno;
+this.setAge=setAge;
+}	
+
+
+      </script>
+      
+   </head>
+   
+   <body>
+   
+  <input type="button" onclick="alert(this.tagName)" value="Direct call to fnction by event"></input>  <!-- Direct call to fnction by event,therefore this refers to current element("input" in this case") -->
+  <input type="button" onclick="demo()" value="indirect call to function by event"></input>  <!--//InDirect call to fnction by event,therefore this in the function refers to Global Object  -->
+    <script type = "text/javascript">
+ 
+ s.setAge(23);
+ document.write("the name is"+s.nam);
+ document.write("the rollno is"+s.rollno);
+ document.write("the Age is"+s.age);
+
+ 
+      </script>
+   
+    
+    
+   </body>
+</html>
+  
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                      Reference Error
+									  
+									  
+									  
+A ReferenceError is thrown if you use (reference) a variable that has not been declared
+
+Or a variable has not been initialized
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Errors</h2>
+
+<p>You cannot use the value of a non-existing variable:</p>
+
+<p id="demo"></p>
+
+<script>
+ var y;
+try {
+    x =y + 1;
+	document.getElementById("demo").innerHTML=x;
+}
+catch(err) {
+    document.getElementById("demo").innerHTML = err.name;
+}
+</script>
+
+</body>
+</html>
+
+
+-->no error will occur , result will be  Nan
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Errors</h2>
+
+<p>You cannot use the value of a non-existing variable:</p>
+
+<p id="demo"></p>
+
+<script>
+ var x;
+try {
+    x =y + 1;
+	document.getElementById("demo").innerHTML=x;
+}
+catch(err) {
+    document.getElementById("demo").innerHTML = err.name;
+}
+</script>
+
+</body>
+</html>
+
+
+-->error will occur because y is neither declared nor initialized.
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Errors</h2>
+
+<p>You cannot use the value of a non-existing variable:</p>
+
+<p id="demo"></p>
+
+<script>
+ var x;
+try {
+    x =1;
+	document.getElementById("demo").innerHTML=x;
+}
+catch(err) {
+    document.getElementById("demo").innerHTML = err.name;
+}
+</script>
+
+</body>
+</html>
+
+
+
+-->No error will occur as x is initialized.
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                              
+															  Window object vs Screen object
+															  
+There is no Screen object, it's actually window.screen.
+
+A window object (obtained through document.defaultView) returns information about both the window and the viewport. To get the application window size use window.outerHeight, to get viewport size use window.innerHeight.
+
+The screen object refers to the actual monitor window or desktop size. Note that if you have a multi-mon setup then you will have multiple screen objects. A window object belongs to a single screen, though not very window belongs to the same screen. I do not know what happens when a browser window spans multiple screens.
+
+From all this, you can determine that if you are running a full-screen browser then window.outerHeight == window.innerHeight == screen.height.
+
+
+
+
+
+										
